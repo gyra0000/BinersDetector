@@ -14,6 +14,18 @@
 		9C07F539291AE47000A3EF2A /* BinersDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07F538291AE47000A3EF2A /* BinersDetectorTests.swift */; };
 		9C07F543291AE47000A3EF2A /* BinersDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07F542291AE47000A3EF2A /* BinersDetectorUITests.swift */; };
 		9C07F545291AE47000A3EF2A /* BinersDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07F544291AE47000A3EF2A /* BinersDetectorUITestsLaunchTests.swift */; };
+		9CD40447291AEDBB002A843F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD40446291AEDBB002A843F /* ImagePicker.swift */; };
+		9CD4044A291B9AE5002A843F /* Biner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD40449291B9AE5002A843F /* Biner.swift */; };
+		9CD4044C291B9DFE002A843F /* BinerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4044B291B9DFE002A843F /* BinerType.swift */; };
+		9CD4044F291B9F47002A843F /* BinerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4044E291B9F47002A843F /* BinerDetailsView.swift */; };
+		9CD40451291B9FF8002A843F /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD40450291B9FF8002A843F /* Text+Extension.swift */; };
+		9CD40453291BA9B6002A843F /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD40452291BA9B6002A843F /* AppButton.swift */; };
+		9CD40455291BB89E002A843F /* ReportWrongClasificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD40454291BB89E002A843F /* ReportWrongClasificationView.swift */; };
+		9CD4046129210203002A843F /* biners_MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4046029210203002A843F /* biners_MobileNetV2.mlmodel */; };
+		9CD4046329210392002A843F /* ClassifierManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4046229210392002A843F /* ClassifierManager.swift */; };
+		9CD4046529210C1C002A843F /* biners_MobileNetV2_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4046429210C1C002A843F /* biners_MobileNetV2_1.mlmodel */; };
+		9CD4046729210F16002A843F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4046629210F16002A843F /* UIImage+Extension.swift */; };
+		9CD4046929211AFD002A843F /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4046829211AFD002A843F /* CGImage+CVPixelBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,18 @@
 		9C07F53E291AE47000A3EF2A /* BinersDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinersDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C07F542291AE47000A3EF2A /* BinersDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinersDetectorUITests.swift; sourceTree = "<group>"; };
 		9C07F544291AE47000A3EF2A /* BinersDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinersDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CD40446291AEDBB002A843F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9CD40449291B9AE5002A843F /* Biner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biner.swift; sourceTree = "<group>"; };
+		9CD4044B291B9DFE002A843F /* BinerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinerType.swift; sourceTree = "<group>"; };
+		9CD4044E291B9F47002A843F /* BinerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinerDetailsView.swift; sourceTree = "<group>"; };
+		9CD40450291B9FF8002A843F /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		9CD40452291BA9B6002A843F /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		9CD40454291BB89E002A843F /* ReportWrongClasificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportWrongClasificationView.swift; sourceTree = "<group>"; };
+		9CD4046029210203002A843F /* biners_MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = biners_MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		9CD4046229210392002A843F /* ClassifierManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierManager.swift; sourceTree = "<group>"; };
+		9CD4046429210C1C002A843F /* biners_MobileNetV2_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = biners_MobileNetV2_1.mlmodel; sourceTree = "<group>"; };
+		9CD4046629210F16002A843F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		9CD4046829211AFD002A843F /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,9 @@
 		9C07F526291AE46E00A3EF2A /* BinersDetector */ = {
 			isa = PBXGroup;
 			children = (
+				9CD40456291D89DA002A843F /* AI model */,
+				9CD4044D291B9F2E002A843F /* Views */,
+				9CD40448291B9AD2002A843F /* Model */,
 				9C07F527291AE46E00A3EF2A /* BinersDetectorApp.swift */,
 				9C07F529291AE46E00A3EF2A /* ContentView.swift */,
 				9C07F52B291AE46F00A3EF2A /* Assets.xcassets */,
@@ -125,6 +152,39 @@
 				9C07F544291AE47000A3EF2A /* BinersDetectorUITestsLaunchTests.swift */,
 			);
 			path = BinersDetectorUITests;
+			sourceTree = "<group>";
+		};
+		9CD40448291B9AD2002A843F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CD40449291B9AE5002A843F /* Biner.swift */,
+				9CD4044B291B9DFE002A843F /* BinerType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CD4044D291B9F2E002A843F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CD40446291AEDBB002A843F /* ImagePicker.swift */,
+				9CD4044E291B9F47002A843F /* BinerDetailsView.swift */,
+				9CD40450291B9FF8002A843F /* Text+Extension.swift */,
+				9CD40452291BA9B6002A843F /* AppButton.swift */,
+				9CD40454291BB89E002A843F /* ReportWrongClasificationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CD40456291D89DA002A843F /* AI model */ = {
+			isa = PBXGroup;
+			children = (
+				9CD4046029210203002A843F /* biners_MobileNetV2.mlmodel */,
+				9CD4046429210C1C002A843F /* biners_MobileNetV2_1.mlmodel */,
+				9CD4046229210392002A843F /* ClassifierManager.swift */,
+				9CD4046629210F16002A843F /* UIImage+Extension.swift */,
+				9CD4046829211AFD002A843F /* CGImage+CVPixelBuffer.swift */,
+			);
+			path = "AI model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +317,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD4046729210F16002A843F /* UIImage+Extension.swift in Sources */,
+				9CD40451291B9FF8002A843F /* Text+Extension.swift in Sources */,
+				9CD4044F291B9F47002A843F /* BinerDetailsView.swift in Sources */,
+				9CD40455291BB89E002A843F /* ReportWrongClasificationView.swift in Sources */,
 				9C07F52A291AE46E00A3EF2A /* ContentView.swift in Sources */,
+				9CD4044C291B9DFE002A843F /* BinerType.swift in Sources */,
+				9CD4046529210C1C002A843F /* biners_MobileNetV2_1.mlmodel in Sources */,
+				9CD4046929211AFD002A843F /* CGImage+CVPixelBuffer.swift in Sources */,
 				9C07F528291AE46E00A3EF2A /* BinersDetectorApp.swift in Sources */,
+				9CD4044A291B9AE5002A843F /* Biner.swift in Sources */,
+				9CD4046129210203002A843F /* biners_MobileNetV2.mlmodel in Sources */,
+				9CD4046329210392002A843F /* ClassifierManager.swift in Sources */,
+				9CD40447291AEDBB002A843F /* ImagePicker.swift in Sources */,
+				9CD40453291BA9B6002A843F /* AppButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,13 +489,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BinersDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = QWLCSKP63R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,13 +519,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BinersDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = QWLCSKP63R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
