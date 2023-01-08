@@ -22,14 +22,19 @@ class ClassifierManager {
         }
         
         do {
-            let prediction = try model.prediction(input_2: pixelBuffer)
-            let value = prediction.Identity[0].doubleValue
-            print(value)
-            if value < 0 {
-                return .bealOrientExpres
-            } else {
-                return .petzlSmd
+            let prediction = try model.prediction(input_4: pixelBuffer)
+            guard let ubp = try? UnsafeBufferPointer<Float>(prediction.Identity) else  {
+                return nil
             }
+            let values = Array(ubp)
+            guard  let max = values.max(), let index = values.firstIndex(of: max) else {
+                return nil
+            }
+            
+            let list: [BinerType] = [.ctAerialProSG, .bealOrientExpres, .petzlSmd, .petzlDjinnBG]
+            
+            return list[index]
+        
         } catch {
             print(error)
             return nil

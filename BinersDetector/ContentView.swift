@@ -9,59 +9,10 @@ import SwiftUI
 import PhotosUI
 import Combine
 
-enum TestEnum {
-    case one
-    case two
-    case three(SecondEnumTest)
-}
-
-enum SecondEnumTest {
-    case test1
-    case test2
-}
-
-class MainVMTest: ObservableObject {
-    @Published var test: TestEnum
-    
-    init(test: TestEnum) {
-        self.test = test
-    }
-}
-
-final class VMTest: ObservableObject {
-    let test: SecondEnumTest
-    
-    init(test: SecondEnumTest) {
-        self.test = test
-    }
-}
-
-
-struct VMTestContentView: View {
-    
-    var viewModel: VMTest
-    
-    var body: some View {
-        content
-    }
-    
-    @ViewBuilder
-    var content: some View {
-        switch viewModel.test {
-        case .test1:
-            Text("Test 1")
-        case .test2:
-            Text("Test 2")
-        }
-    }
-}
-
 struct ContentView: View {
     @State var isCameraOpen: Bool = false
     @State var isReportScreenOpen: Bool = false
     @State var selectedImage: UIImage?
-    
-    @StateObject var viewModel: MainVMTest = .init(test: .one)
     
     let classifierManager: ClassifierManager = .init()
     
@@ -78,29 +29,6 @@ struct ContentView: View {
             }
     }
     
-    @ViewBuilder
-    var testView: some View {
-        switch viewModel.test {
-        case .one, .two:
-            Button("One", action: {
-                viewModel.test = .one
-            })
-        case .three(let value):
-            VMTestContentView(viewModel: VMTest(test: value))
-        }
-    }
-    
-    var buttonsView: some View {
-        VStack {
-            Button("Three 1", action: {
-                viewModel.test = .three(.test1)
-            })
-            Button("Three 2", action: {
-                viewModel.test = .three(.test2)
-            })
-        }
-    }
-    
     var scrolView: some View {
         ScrollView {
             HStack {
@@ -111,8 +39,6 @@ struct ContentView: View {
                     if let _ = selectedImage {
                         detailsView
                     } else {
-                        testView
-                        buttonsView
                         scaneView
                     }
                    

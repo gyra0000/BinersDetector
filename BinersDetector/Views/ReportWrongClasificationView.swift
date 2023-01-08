@@ -15,7 +15,7 @@ struct ReportWrongClasificationView: View {
     
     let didSendFeedback: () -> Void
     
-    let biners: [BinerType] = [.bealOrientExpres,.petzlSmd]
+    let biners: [BinerType] = BinerType.allCases
     
     var body: some View {
         if isFeedbackSubscribed {

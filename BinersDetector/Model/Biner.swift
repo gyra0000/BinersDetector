@@ -8,6 +8,7 @@
 enum Brand {
     case petzl
     case beal
+    case climbingTechnology
     
     func getImageName() -> String {
         switch self {
@@ -15,6 +16,8 @@ enum Brand {
             return "petzl"
         case .beal:
             return "beal"
+        case .climbingTechnology:
+            return "climbingTechnology"
         }
     }
 }
